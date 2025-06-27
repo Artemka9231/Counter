@@ -6,7 +6,7 @@ import {increment, reset, setValues} from "./counterSlice.ts";
 
 export const Counter =()=>{
     const dispatch = useDispatch()
-    const counter = useSelector((state:RootState)=> state.counter)
+    const counter = useSelector((state:RootState)=> state.counter) //Hello
 
     const [start, setStart] = useState(counter.startValue)
     const [max, setMax] = useState(counter.maxValue)
